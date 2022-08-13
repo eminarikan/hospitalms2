@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div th:fragment="doctorIndex">
+		<div class="w-8/12 mx-auto flex justify-end">
+			<a href="/doctors/create">
+				<span th:replace="fragments/svg/svgs.html :: addIcon"></span>
+			</a>
+		</div>
+		<table class="table-auto w-3/6 mx-auto">
+			<tr class="text-left"> 
+				<th>Id</th>
+				<th>Name</th>
+				<th>Surname</th>
+				<th>TC</th>
+				<th>Clinic</th>
+				<th>Options</th>
+			</tr>
+			<tr th:each="doctor : ${doctors}">
+				<td th:text="${doctor.id}"></td>
+				<td th:text="${doctor.name}"></td>
+				<td th:text="${doctor.surname}"></td>
+				<td th:text="${doctor.tc.tc}"></td>
+				<td th:text="${doctor.clinic} == null ? 'No Clinic' : ${doctor.clinic.name} "></td>
+				<td> 
+					<a th:replace="fragments/link.html :: link( '/doctors/'+${doctor.id}+'/show','Show' )"></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div th:fragment="doctorEdit" class="flex flex-col w-4/6 mx-auto">
+		<h2 class="text-center">Edit Doctor</h2>
+		<form th:action="@{/doctors/{id}/edit (id =${doctor.id})}" class="mx-auto w-5/6  flex flex-col align-items-center justify-center"  method="post" th:object="${doctor}">
+			
+			
+			<label for="doctor_name" class="block mb-2 text-sm font-medium text-gray-900">Doctor Name</label>
+            <input th:field="*{name}" type="text" id="doctor_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+        
+        	<label for="doctor_surname" class="block mb-2 text-sm font-medium text-gray-900">Doctor Surname</label>
+            <input th:field="*{surname}" type="text" id="doctor_surname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+        	
+        	<label for="doctor_tc" class="block mb-2 text-sm font-medium text-gray-900">Doctor TC</label>
+            <input th:value="*{tc.tc}" type="number" id="doctor_tc" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" disabled>
+			<input type="hidden" name="tc" th:value="*{tc.tc}">
+        	
+			<label for="doctor_password" class="block mb-2 text-sm font-medium text-gray-900">Doctor Password</label>
+            <input th:field="*{password}" type="text" id="doctor_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+        
+        	<label for="doctor_clinic" class="block mb-2 text-sm font-medium text-gray-900">Set Clinic</label>
+        	<select th:field="*{clinicId}" name="clinicId" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+        		<option label="Select Clinic" th:value="null">Select Clinic</option>
+	        	<option th:each="clinic : ${clinics}" th:value="${clinic.id}" th:text="${clinic.name}"></option>
+        	</select>
+        
+        
+			<button type="submit" class="mt-10 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Save</button>
+		</form>
+	</div>
+</body>
+</html>

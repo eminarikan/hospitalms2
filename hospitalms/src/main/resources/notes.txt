@@ -1,0 +1,43 @@
+
+	hastane yönetim sistemi
+		
+		Model
+			User
+				tc
+				isim
+				soyisim
+				sifre
+				role
+			Doktor 
+				id
+				klinik
+			Başhekim
+				id
+			Hasta 
+				id
+				randevular
+				
+			Randevu
+				id 
+				interval
+				hasta
+				doktor
+			Klinik
+				id
+				isim
+				doktorlar
+			
+			Interval
+				id
+				baslangic
+				bitis
+		
+		Başhekim
+			manage clinic
+				crud
+				addDoctor
+				
+			manage doktor
+				crud
+				setAvailableInternals
+		

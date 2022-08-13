@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div th:fragment="doctorInternalIndex">
+		<div class="w-8/12 mx-auto flex justify-end">
+			<a href="/doctor/internals/create">
+				<span th:replace="fragments/svg/svgs.html :: addIcon"></span>
+			</a>
+		</div>
+		<div th:each="i : internals">
+			<p th:text="${i.}"></p>
+ 		</div>
+	</div>
+</body>
+</html>

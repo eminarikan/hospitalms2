@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div th:fragment="clinicShow" class="flex flex-col w-4/6 mx-auto">
+		<div class="w-4/5 mx-auto flex justify-between">
+			<div>
+				<p th:text="${clinic.name}"> </p>
+			</div>
+			<div>
+				<a th:replace="fragments/link.html :: link( '/clinics/'+${clinic.id}+'/edit','Edit' )"></a>
+				<a th:replace="fragments/link.html :: link( '/clinics/'+${clinic.id}+'/delete','Delete' )"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

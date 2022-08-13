@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div th:fragment="doctorShow" class="flex flex-col w-4/6 mx-auto">
+		<div class="w-4/5 mx-auto flex justify-between">
+			<div class="flex gap-2 justify-start">
+				<p th:text="${doctor.name}"> </p>
+				<p th:text="${doctor.surname}"> </p>
+				<p th:text="${doctor.tc.tc}"> </p>
+				<p th:text="${doctor.clinic} == null ? 'No Clinic' : ${doctor.clinic.name} "> </p>
+			</div>
+			<div>
+				<a th:replace="fragments/link.html :: link( '/doctors/'+${doctor.id}+'/edit','Edit' )"></a>
+				<a th:replace="fragments/link.html :: link( '/doctors/'+${doctor.id}+'/delete','Delete' )"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

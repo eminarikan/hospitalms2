@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div th:fragment="clinicIndex">
+		<div class="w-8/12 mx-auto flex justify-end">
+			<a href="/clinics/create">
+				<span th:replace="fragments/svg/svgs.html :: addIcon"></span>
+			</a>
+		</div>
+		<table class="table-auto w-3/6 mx-auto">
+			<tr class="text-left"> 
+				<th>Id</th>
+				<th>Name</th>
+				<th>Options</th>
+			</tr>
+			<tr th:each="clinic : ${clinics}">
+				<td th:text="${clinic.id}"></td>
+				<td th:text="${clinic.name}"></td>
+				<td> 
+					<a th:replace="fragments/link.html :: link( '/clinics/'+${clinic.id}+'/show','Show' )"></a>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

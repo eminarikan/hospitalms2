@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:sec="http://www.thymeleaf.org">
+
+<head th:replace="fragments/head.html :: head"></head>
+
+<body>
+	<div th:replace="fragments/navbar.html :: navbar(${todayWeather})"></div>
+
+	<div th:if="${ pageName == 'home' }">
+		<div th:replace="fragments/home.html :: home"></div>
+	</div>
+	
+	<div th:if="${ pageName == 'error' }">
+		<div th:replace="fragments/error.html :: error"></div>
+	</div>
+
+	<div class="chiefPages" >
+		<div th:if="${ pageName == 'clinicIndex' }">
+			<div th:replace="clinic/index.html :: clinicIndex"></div>
+		</div>
+		<div th:if="${ pageName == 'clinicCreate' }">
+			<div th:replace="clinic/create.html :: clinicCreate"></div>
+		</div>
+		<div th:if="${ pageName == 'clinicShow' }">
+			<div th:replace="clinic/show.html :: clinicShow"></div>
+		</div>
+		<div th:if="${ pageName == 'clinicEdit' }">
+			<div th:replace="clinic/edit.html :: clinicEdit"></div>
+		</div>
+		<div th:if="${ pageName == 'doctorIndex' }">
+			<div th:replace="doctor/index.html :: doctorIndex"></div>
+		</div>
+		<div th:if="${ pageName == 'doctorCreate' }">
+			<div th:replace="doctor/create.html :: doctorCreate"></div>
+		</div>
+		<div th:if="${ pageName == 'doctorShow' }">
+			<div th:replace="doctor/show.html :: doctorShow"></div>
+		</div>
+		<div th:if="${ pageName == 'doctorEdit' }">
+			<div th:replace="doctor/edit.html :: doctorEdit"></div>
+		</div>
+	</div>
+	<div class="patientPages">
+		<div th:if="${ pageName == 'patientRegister' }">
+			<div th:replace="patient/register.html :: patientRegister"></div>
+		</div>
+	</div>
+	<div  class="doctorPages">
+		<div th:if="${ pageName == 'doctorInternalIndex' }">
+			<div th:replace="doctor/internal/index.html :: doctorInternalIndex"></div>
+		</div>
+		<div th:if="${ pageName == 'doctorInternalCreate' }">
+			<div th:replace="doctor/internal/create.html :: doctorInternalCreate"></div>
+		</div>
+	</div>
+
+</body>
+
+</html>

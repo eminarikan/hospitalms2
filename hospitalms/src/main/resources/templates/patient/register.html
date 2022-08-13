@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+	<div th:fragment="patientRegister" class="flex flex-col w-4/6 mx-auto">
+		<h2 class="text-center">Create Doctor</h2>
+		<form action="/patient/register" class="mx-auto w-5/6  flex flex-col align-items-center justify-center"  method="post" th:object="${patient}">
+			
+			
+			<label for="patient_name" class="block mb-2 text-sm font-medium text-gray-900">Name</label>
+            <input th:field="*{name}" type="text" id="patient_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+        
+        	<label for="patient_surname" class="block mb-2 text-sm font-medium text-gray-900">Surname</label>
+            <input th:field="*{surname}" type="text" id="patient_surname" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+        	
+        	<label for="patient_tc" class="block mb-2 text-sm font-medium text-gray-900">TC</label>
+            <input name="tc" type="number" id="patient_tc" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+        
+        	<label for="patient_password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
+            <input th:field="*{password}" type="text" id="patient_password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+        
+        
+			<button type="submit" class="mt-10 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Register</button>
+		</form>
+	</div>
+</body>
+</html>

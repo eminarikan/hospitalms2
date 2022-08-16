@@ -7,8 +7,6 @@ import org.springframework.stereotype.Service;
 
 import com.course.hospitalms.model.Appointment;
 import com.course.hospitalms.repository.AppointmentRepository;
-import com.course.hospitalms.repository.ChiefRepository;
-import com.course.hospitalms.repository.DoctorRepository;
 
 @Service
 public class AppointmentService {

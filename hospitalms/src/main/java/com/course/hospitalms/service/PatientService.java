@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.course.hospitalms.model.Patient;
-import com.course.hospitalms.repository.ChiefRepository;
-import com.course.hospitalms.repository.DoctorRepository;
 import com.course.hospitalms.repository.PatientRepository;
 
 @Service

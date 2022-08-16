@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b5597cb-352a-4c3b-b5e9-ab07cff3fef6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/DatabaseSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/DatabaseSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/controller/ClinicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/controller/ClinicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/controller/patient/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/controller/patient/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/model/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/model/Appointment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/model/Internal.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/model/Internal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/model/Tc.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/model/Tc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/repository/AppointmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/repository/AppointmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/repository/ChiefRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/repository/ChiefRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/repository/ClinicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/repository/ClinicRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/repository/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/service/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/service/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/service/ChiefService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/service/ChiefService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/service/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hospitalms/src/main/java/com/course/hospitalms/service/PatientService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2DRBt4Vr2picF7buVPFGeC1jm3G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Workspace/Spring/hospitalms"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b5597cb-352a-4c3b-b5e9-ab07cff3fef6" name="Changes" comment="" />
+      <created>1660652227608</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660652227608</updated>
+    </task>
+    <servers />
+  </component>
+</project>

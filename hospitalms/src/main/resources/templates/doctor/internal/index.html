@@ -7,9 +7,11 @@
 				<span th:replace="fragments/svg/svgs.html :: addIcon"></span>
 			</a>
 		</div>
-		<div th:each="i : internals">
-			<p th:text="${i.}"></p>
- 		</div>
+		<div th:if="${internals != null && internals.size != 0}">
+			<div th:each="i : internals">
+				<p th:text="${i.start}"></p>
+			 </div>
+		</div>
 	</div>
 </body>
 </html>

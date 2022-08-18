@@ -7,12 +7,16 @@ import org.springframework.stereotype.Service;
 
 import com.course.hospitalms.model.Doctor;
 import com.course.hospitalms.repository.DoctorRepository;
+import com.course.hospitalms.repository.TcRespository;
 
 @Service
 public class DoctorService {
 
 	@Autowired
 	private DoctorRepository repository;
+
+	@Autowired
+	private TcRespository tcRespository;
 
 	public List<Doctor> findAll() {
 		return repository.findAll();
@@ -23,7 +27,7 @@ public class DoctorService {
 	}
 	
 	public Doctor findById(Long id) {
-		return repository.findById(id).get();
+		return repository.findByTc(tcRespository.findByTc(id));
 	}
 
 	public void delete(Long id) {

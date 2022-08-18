@@ -19,7 +19,6 @@ public class Weather {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return date +" " + day +" " + icon + " " + degree ;
 	}
 	

@@ -13,12 +13,15 @@ public class InternalService {
 
 	@Autowired
 	private InternalRespository repository;
+
+	@Autowired
+	private DoctorService doctorService;
 	
 	public void save(Internal internal) {
 		repository.save(internal);
 	}
 	
 	public List<Internal> getAllInternalsForDoctor(Long doctorTc){
-		return repository.findAllByDoctorTc(doctorTc);
+		return repository.findAllByDoctor(doctorService.findById(doctorTc));
 	}
 }
